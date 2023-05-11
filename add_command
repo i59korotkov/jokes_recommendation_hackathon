@@ -1,0 +1,2 @@
+alias build='docker build --pull --rm -f "Dockerfile" -t jokes-recommendation "."'
+alias start='docker run --rm -d -p 5000:5000 -v ~/jokes_recommendation/log:/jokes_recommendation/log -v ~/my_project/data:/jokes_recommendation/data --name my_script jokes-recommendation:latest'
